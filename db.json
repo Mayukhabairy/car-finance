@@ -1,0 +1,22 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Merc",
+      "author": "Sriram",
+      "cost": 70000
+    },
+    {
+      "id": 2,
+      "author": "Champ",
+      "name": "Niss-Rouge",
+      "cost": "2000"
+    },
+    {
+      "id": 3,
+      "author": "Mayukha",
+      "name": "Ferrari",
+      "cost": 100000
+    }
+  ]
+}

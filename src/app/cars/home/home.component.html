@@ -1,0 +1,24 @@
+<div class="container mt-2">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let car of cars$ | async">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ car.name }}</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{ car.author }}</li>
+            <li class="list-group-item">${{ car.cost }}</li>
+          </ul>
+          <div class="card-body">
+            <a [routerLink]="['/edit', car.id]" class="btn btn-dark">Edit Car</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col col-md-4 offset-md-4">
+          <a routerLink="/add" class="btn btn-dark">Add A New Car</a>
+        </div>
+      </div>
+  </div>
